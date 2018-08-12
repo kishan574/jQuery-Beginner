@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        $("document").ready(function () {
+
+            $("#create").click(function(){
+                $("#container p:last").text("3.text has been replaced");
+
+            });
+
+            $('#create_var').click(function () {
+                var newText = $("#container p:last");
+
+                $("#container p:first").html(newText);
+
+              });
+
+
+
+           
+        });
+
+    </script>
+
+    <style>
+        
+    </style>
+
+</head>
+
+<body>
+
+        <a href="#" id="create"> Create </a> |
+        <a href="#" id="create_text"> Create Text </a> |
+        <a href="#" id="create_var"> Create from var </a>
+
+    <div id="container">
+      
+      
+        <p>
+         1.   lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+
+        <p>
+         2.   lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+        <p>
+         3.   lorem ipsum domata set. lorem ipsum domata set. Dark ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+      
+    </div>
+</body>
+
+</html>

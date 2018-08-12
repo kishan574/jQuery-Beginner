@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        $("document").ready(function () {
+
+            $("#append").click(function(){
+                $("p:first").append("<b>first append<b/>");
+
+            });
+
+$("#preppend").click(function(){
+                $("p:first").prepend("<b>first preppend<b/>");
+
+            });
+
+          
+            $("#container p:last").wrap("<div class='colorBox'>");
+           // $("#container p:last").empty(); //deletes or flushes tag data
+
+           $("#container p:last").replaceWith("YOLO!!");
+
+
+           
+        });
+
+    </script>
+
+    <style>
+        .colorBox{
+color: aqua;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+        <a href="#" id="append">Append</a> &nbsp; &nbsp; 
+        <a href="#" id="preppend">Preppend</a> &nbsp; &nbsp; 
+
+    <div id="container">
+      
+      
+        <p>
+         1.   lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+
+        <p>
+         2.   lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+        <p>
+         3.   lorem ipsum domata set. lorem ipsum domata set. Dark ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+      
+    </div>
+</body>
+
+</html>

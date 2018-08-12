@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="js/jquery.js"></script>
+
+<script>
+
+    $("document").ready(function(){
+
+         $("#slideUp").click(function(){
+             $("#textBox").slideUp("fast" , "linear");
+
+         });
+
+         $("#slideDown").click(function () { 
+             $("#textBox").slideDown(3000 , "linear");
+          });
+
+          $("#slideToggle").click(function() { 
+              $("#textBox").slideToggle(function () { 
+          
+                    alert("done!");
+          
+               });
+          
+           });
+   
+    });
+
+</script>
+
+</head>
+<body>
+    <a href="#" id="slideUp" >Slide Up</a>  |  <a href="#" id="slideDown" >Slide Down</a> | <a href="#" id="slideToggle" >Slide Toggle</a>
+
+    <div id="textBox">
+        <p>
+            lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set. 
+        </p>
+
+    </div>
+</body>
+</html>

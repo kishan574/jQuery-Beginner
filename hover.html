@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Sample</title>
+    <script src="js/jquery.js"></script>
+
+
+    <script>
+        
+       $("documents").ready(function(){
+           
+        $(".textCopy").hover(highlightCopy);
+
+        function highlightCopy(){ 
+
+            $(this).toggleClass("highlight");
+         };
+
+
+
+
+
+       });
+    </script>
+
+    <style>
+
+        .highlight{
+
+            text-shadow: 1px 1px #cccccc;
+            background-color: crimson;
+            
+
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <div id="textBox">
+
+    <p class="textCopy"> lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. 
+        </p>       
+
+        <p> lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. 
+         </p>       
+    
+    </div>
+
+</body>
+</html>

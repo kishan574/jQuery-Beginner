@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        $("document").ready(function () {
+
+          //  $("p").css("border" , "3px green dotted");
+           // $("#textBox p:first").css("border" , "3px blue dotted");
+            //$("#textBox p:last").css("border" , "3px red dotted");
+
+            $("#textBox p:odd").css("background" , "grey");
+          //  $("#textBox p:even").css("background" , "purple ");
+            
+            $("p:contains('Dark')").css("border" , "8px green dotted");
+
+            
+
+           
+        });
+
+    </script>
+
+    <style>
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div id="textBox">
+        <p>
+            lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+
+        <p>
+            lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+        <p>
+            lorem ipsum domata set. lorem ipsum domata set. Dark ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+        <p>
+            lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+        <p>
+            lorem ipsum domata set. lorem ipsum domata set. lorem ipsum domata set.lorem ipsum domata set. lorem ipsum domata set. lorem
+            ipsum domata set.
+        </p>
+    </div>
+</body>
+
+</html>

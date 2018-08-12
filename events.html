@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Sample</title>
+    <script src="js/jquery.js"></script>
+
+
+    <script>
+        
+       $("documents").ready(function(){
+
+           $("#textBox").on("click" , whenMouseClicked);
+
+           $("#textBox").on("mouseleave" , whenMouseLeaves);
+
+           function whenMouseClicked(){
+               
+               $("#textBox").html("<h1>Clicked!</h1>");
+
+           }
+
+           function whenMouseLeaves(){
+               
+               $("#textBox").html("<h1>How u doing?</h1>");
+               
+           }
+
+
+
+       });
+    </script>
+
+    <style>
+
+        #textBox{
+            height: 150px;
+            width: 250px;
+            border:1px solid black;
+            background-color: aliceblue;
+
+            
+        }
+    </style>
+
+
+</head>
+<body>
+       <div id="textBox">
+            
+       </div>
+
+</body>
+</html>

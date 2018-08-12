@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Sample</title>
+    <script src="js/jquery.js"></script>
+
+
+    <script>
+        
+       $("documents").ready(function(){
+           
+           $("#show").on("click" , function(){
+
+               $("#textBox").show();
+           });
+
+           $("#hide").on("click" , function(){
+               $("#textBox").hide();
+               });       
+
+
+
+       });
+    </script>
+
+    <style>
+
+        #textBox{
+            height: 100px;
+            width: 350px;
+            border:1px solid black;
+            background-color: aliceblue;
+            display: none;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <a href="#" id="show">Click to show</a> | <a href="#" id="hide">Click to hide</a> 
+    
+    <br> <br>
+
+    <div id="textBox">
+            lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. 
+       </div>
+
+</body>
+</html>

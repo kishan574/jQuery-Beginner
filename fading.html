@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Sample</title>
+    <script src="js/jquery.js"></script>
+
+
+    <script>
+        
+       $("documents").ready(function(){
+           
+        $("#fadeIn").on("click" , function() {  
+            
+            $("#textBox").fadeIn("fast", function(){
+
+            alert("Done fading in");
+        }
+        )
+        });
+
+
+        $("#fadeOut").on("click" , function(){
+
+        $("#textBox").fadeOut(3050 , function(){
+            alert("Done fading out");
+        });
+
+        });
+
+    
+
+       });
+    </script>
+
+    <style>
+
+        #textBox{
+            display: none;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <a href="#" id="fadeIn">Fade In</a>  |   <a href="#" id="fadeOut">Fade Out</a> 
+
+    <div id="textBox">
+
+         <p> lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. 
+         </p>       
+
+        <p> lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. lorem ipsum dolar sit amet. 
+        </p>       
+    
+    </div>
+
+</body>
+</html>
